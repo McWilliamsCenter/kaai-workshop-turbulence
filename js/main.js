@@ -18,7 +18,7 @@
 
   var countdownEl = document.getElementById('countdown');
   if (countdownEl) {
-    var workshopStart = new Date('2026-08-31T00:00:00-04:00');
+    var workshopStart = new Date('2026-11-02T00:00:00-05:00');
 
     function updateCountdown() {
       var now = new Date();

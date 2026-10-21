@@ -1,7 +1,7 @@
 # KAAI Workshop Website
 
-Static save-the-date site for the KAAI Workshop on Foundation Models & Agentic Methods for
-Astrophysical Simulation (Carnegie Mellon University, August 31 – September 3, 2026).
+Static save-the-date site for the KAAI Workshop on AI Methods for Turbulence and
+Early-Universe Signals (Carnegie Mellon University, November 2–6, 2026).
 
 Plain HTML/CSS/JS. No build step, no dependencies.
 
@@ -22,13 +22,15 @@ script in `js/main.js`.
 
 | Section | Look for | Notes |
 |---|---|---|
-| Schedule | `#schedule` section | Structure is set (times, session types); still needs real speaker names in place of "Speaker TBD" |
-| Speakers | `#speakers` section, `.speaker-card.placeholder` cards | Replace placeholder cards with real name/affiliation/photo cards |
-| Hackathon details | `#hackathon` section | Team formation, judging, submission process, compute resources |
-| Registration | `#registration` section | Add real open date and/or registration link/form |
+| Overview / Topics | `#overview` section | Wording marked for review with the organizers |
+| Schedule | `#schedule` section | Placeholder day blocks. When a schedule CSV exists, run `python3 scripts/build_schedule.py <file.csv>` to regenerate the content between the `SCHEDULE:START/END` markers |
+| Speakers | `#speakers` section | Replace the "to be announced" note with `.speaker-grid` / `.speaker-card` markup (styles are in `css/style.css`) |
+| Registration | `#registration` section | Add registration link/form |
+| Committee | `#committee` section | Missing affiliation and homepage links are marked with TODO comments |
 
-To swap the logo: drop a new source image anywhere and regenerate sizes with
-`sips -z <px> <px> source.png --out img/<name>.png` (see sizes below). Don't use CMU's
+The current logo is a placeholder drawn as `img/logo.svg` (turbulent eddies, a CMB-like
+speckle field, and a gravitational-wave chirp). To regenerate the PNG sizes from it, run
+`rsvg-convert -w <px> -h <px> img/logo.svg -o img/<name>.png` (see sizes below). Don't use CMU's
 official logo/wordmark (trademark restrictions).
 
 The countdown target date is set in `js/main.js` (`workshopStart`).

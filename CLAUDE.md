@@ -2,9 +2,11 @@
 
 ## What this is
 
-A static website announcing the **KAAI Workshop on Foundation Models & Agentic Methods for
-Astrophysical Simulation**, hosted at Carnegie Mellon University, August 31–September 3.
-This is the first workshop in the sequence run under the Simons Foundation
+A static website announcing the **KAAI Workshop on AI Methods for Turbulence and
+Early-Universe Signals**, hosted at Carnegie Mellon University, November 2–6, 2026.
+This repo was adapted from the site for the previous installment (Foundation Models &
+Agentic Methods for Astrophysical Simulation, Aug 31–Sep 3). The workshop is part of the
+sequence run under the Simons Foundation
 **Keystone Astronomy & AI (KAAI) Fellows Program**
 (https://www.cmu.edu/astro-cosmology/research/simons-kaai-fellows/index.html).
 
@@ -64,80 +66,20 @@ informal, focused on substance.
 
 ## Site structure (single page, anchor nav)
 
-Nav bar: `Overview` · `Topics` · `Schedule` · `Speakers` · `Hackathon` · `Committee` · `Registration`
+Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` · `Speakers` · `Committee`
 
-### 1. Header / Hero
-- Workshop title: **Foundation Models & Agentic Methods for Astrophysical Simulation**
-- Subtitle line: "A KAAI Workshop · Carnegie Mellon University"
-- Dates: **August 31 – September 3**
-- Location: Carnegie Mellon University, Pittsburgh, PA
-- One-line framing: first workshop in the Simons Foundation Keystone Astronomy & AI (KAAI)
-  Fellows Program workshop series.
-- Optional: a subtle countdown or "Save the date" badge — keep understated, not gimmicky.
-
-### 2. Overview
-Short paragraph(s) covering:
-- The workshop is small and informal, emphasizing cutting-edge work presented to a
-  technically literate audience, identifying important directions in the emerging field,
-  and building new collaborations.
-- It combines a conference (talks + discussion) with a hackathon.
-- Link out to the KAAI Fellows Program page for broader program context:
-  https://www.cmu.edu/astro-cosmology/research/simons-kaai-fellows/index.html
-
-### 3. Scientific Topics
-Two-column or two-card layout, one per theme:
-- **Foundation models for astrophysics** — how foundation models can be used to represent,
-  manipulate, compress, compare, and interpret astrophysical simulations and observations.
-- **Agentic science loops** — how agentic methods can responsibly augment the scientific
-  research process.
-
-### 4. Format (Conference + Hackathon)
-Make the dual structure visually clear — e.g. a simple two-block timeline:
-- **Mon–Tue, Aug 31–Sep 1: Talks & Discussion** — invited talks and discussion on novel
-  research at the intersection of foundation models, agentic methods, and astrophysical
-  simulation.
-- **Wed–Thu, Sep 2–3: Astro+AI Hackathon** — a Pittsburgh-wide hackathon open to CMU/Pitt
-  participants across physics and ML, featuring benchmark and open-discovery challenge
-  tracks with prizes.
-
-### 5. Schedule — **TBD**
-Placeholder section, clearly labeled "Schedule — coming soon" / "Detailed schedule to be
-announced." Keep the Mon–Thu date structure visible (from section 4) but no talk-by-talk
-detail yet. Don't fake a schedule table with fabricated entries.
-
-### 6. Invited Speakers — **TBD**
-Placeholder card grid (e.g. 4–6 empty/placeholder cards or a simple "Speaker list to be
-announced — check back soon" message). Don't invent speaker names.
-
-### 7. Hackathon — **TBD** (format details)
-We know: Pittsburgh-wide, open to CMU/Pitt across physics and ML, benchmark track +
-open-discovery track, prizes. Format details (team formation, judging, submission process,
-compute resources) are TBD — mark clearly as forthcoming.
-
-### 8. Organizing Committee
-List all six, CMU affiliation, no fabricated titles/bios unless supplied:
-- Matt Ho
-- Barnabás Póczos
-- Rupert Croft
-- Tiziana Di Matteo
-- Hy Trac
-- Rachel Mandelbaum
-
-Simple card or list layout: name + affiliation (Carnegie Mellon University). Leave room to
-add a homepage link per person later (see reference site's `[Name] [[Homepage]]` pattern) —
-but don't fabricate links; leave as plain text unless a URL is provided.
-
-### 9. Registration — **TBD**
-Placeholder: "Registration will open in [Month]. Check back for details." No form, no fake
-dates — just a clear holding message and maybe a mailto or contact line if/when available.
-
-### 10. Footer
-- Workshop name, dates, CMU
-- Link to KAAI Fellows Program page
-- Contact email placeholder (`<!-- TODO: contact email -->`)
-- Optional: link back to McWilliams Center for Cosmology & Astrophysics
-
----
+- **Hero:** title **AI Methods for Turbulence and Early-Universe Signals**, "A KAAI Workshop ·
+  Carnegie Mellon University", **November 2–6**, countdown, Simons + McWilliams logos.
+- **Overview + Topics:** two themes, AI methods for turbulence and early-universe signals.
+- **Registration — TBD.** Contact: mgurgeni@andrew.cmu.edu.
+- **Location:** unchanged from the previous installment (Wean Hall 8330, CMU).
+- **Schedule — tentative/TBD.** Mon–Fri day blocks with "Program to be announced." Don't fake
+  entries; regenerate from a CSV with `scripts/build_schedule.py` once one exists.
+- **Speakers — TBD.** Don't invent speaker names.
+- **Organizing Committee:** Tina Kahniashvili, Barnabás Póczos, Alberto Roper Pol,
+  Murman Gurgenidze. Don't fabricate affiliations or links that weren't supplied.
+- **Footer:** name, dates, CMU, KAAI program link, contact email.
+- No hackathon section for this installment unless one is announced.
 
 ## Explicit non-goals for this draft
 
@@ -152,11 +94,9 @@ dates — just a clear holding message and maybe a mailto or contact line if/whe
 
 ## Open items to fill in later (leave TODO comments in code)
 
-- Real logo / visual mark for the workshop
-- Contact email
+- Final logo (current one is a placeholder drawn in `img/logo.svg`)
 - Speaker names + affiliations + photos
 - Full schedule
-- Hackathon rules, prize details, judging criteria
 - Registration link/form
 - Venue/room details at CMU
 - Individual committee member homepage links
