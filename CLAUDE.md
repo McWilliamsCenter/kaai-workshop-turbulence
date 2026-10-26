@@ -94,7 +94,6 @@ Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` ·
 
 ## Open items to fill in later (leave TODO comments in code)
 
-- Final logo (current one is a placeholder drawn in `img/logo.svg`)
 - Speaker names + affiliations + photos
 - Full schedule
 - Registration link/form

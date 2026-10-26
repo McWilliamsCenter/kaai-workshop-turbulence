@@ -28,10 +28,11 @@ script in `js/main.js`.
 | Registration | `#registration` section | Add registration link/form |
 | Committee | `#committee` section | Missing affiliation and homepage links are marked with TODO comments |
 
-The current logo is a placeholder drawn as `img/logo.svg` (turbulent eddies, a CMB-like
-speckle field, and a gravitational-wave chirp). To regenerate the PNG sizes from it, run
-`rsvg-convert -w <px> -h <px> img/logo.svg -o img/<name>.png` (see sizes below). Don't use CMU's
-official logo/wordmark (trademark restrictions).
+The logo is cropped from a turbulence render (`ai_turbulence_logo.png`, 3840×2160, kept out
+of the repo) into a round, red-ringed badge. To regenerate it from a new source image, run
+`python3 scripts/make_logo.py <source.png> master.png <x0> <y0> <size>` (square crop in source
+pixels; the current logo uses `960 0 2160`), then resize `master.png` to each size below, e.g.
+`convert master.png -resize 160x160 -strip img/logo.png`.
 
 The countdown target date is set in `js/main.js` (`workshopStart`).
 
