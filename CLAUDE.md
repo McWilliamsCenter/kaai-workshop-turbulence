@@ -73,13 +73,15 @@ Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` ·
 - **Overview + Topics:** two themes, AI methods for turbulence and early-universe signals.
 - **Registration — TBD.** Contact: mgurgeni@andrew.cmu.edu.
 - **Location:** unchanged from the previous installment (Wean Hall 8330, CMU).
-- **Schedule — tentative/TBD.** Mon–Fri day blocks with "Program to be announced." Don't fake
-  entries; regenerate from a CSV with `scripts/build_schedule.py` once one exists.
-- **Speakers — TBD.** Don't invent speaker names.
-- **Organizing Committee:** Tina Kahniashvili, Barnabás Póczos, Alberto Roper Pol,
-  Murman Gurgenidze. Don't fabricate affiliations or links that weren't supplied.
+- **Schedule — tentative.** Mon–Fri program generated from `schedule.csv` with
+  `scripts/build_schedule.py`. Talk titles are TBA; don't invent them. Friday is a hackathon day.
+- **Speakers:** Arthur Kosowsky, Isak Stomberg, Deyan Mihaylov, Matthew Ho, Muni Zhou (Stephon Alexander
+  is on the schedule but not on the speaker list yet). Don't invent positions or affiliations.
+- **Organizing Committee:** Tina Kahniashvili (CMU Physics), Barnabás Póczos (CMU MLD),
+  Alberto Roper Pol (University of Geneva, Dept. of Theoretical Physics), Murman Gurgenidze (CMU Physics). Don't fabricate
+  links that weren't supplied.
 - **Footer:** name, dates, CMU, KAAI program link, contact email.
-- No hackathon section for this installment unless one is announced.
+- Hackathon (Friday) appears only in the schedule for now; no separate section until details exist.
 
 ## Explicit non-goals for this draft
 

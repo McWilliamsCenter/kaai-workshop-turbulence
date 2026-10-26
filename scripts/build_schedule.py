@@ -29,11 +29,10 @@ update it if the workshop dates ever change.
 
 Row handling by Type (case-insensitive):
     - "Conference dinner"          -> dropped entirely, not shown on the site.
-    - "" (blank) + Wednesday/Thursday hackathon rows -> the descriptive text
-      actually lives in the *Speaker* column for these rows (that's just how the
-      hackathon block is laid out in the sheet). Rendered as a single plain-text
-      session line, no separate speaker/title.
-    - "Coffee break" / "Lunch break" -> rendered as a shaded, spanning break row.
+    - "" (blank) -> non-talk activities (crash course, free time, hackathon, ...).
+      The descriptive text goes in the *Speaker* column (falls back to Title).
+      Rendered as a single plain-text session line, no separate speaker/title.
+    - "Coffee break" / "Lunch break" / "Lunch" -> rendered as a shaded, spanning break row.
     - "Discussion"                  -> the discussion *topic* (not a person) is
       read from the Title column if present, falling back to the Speaker column
       (an earlier version of the sheet put it there instead). Rendered as the
@@ -73,7 +72,7 @@ DAY_LABELS = {
     "friday": "Friday, November 6",
 }
 
-BREAK_TYPES = {"coffee break", "lunch break"}
+BREAK_TYPES = {"coffee break", "lunch break", "lunch"}
 SKIPPED_TYPES = {"conference dinner"}
 CONTRIBUTED_ALIASES = {"contributed talk", "kaai contributed talk"}
 
@@ -236,7 +235,7 @@ def main():
     days = parse_csv(sys.argv[1])
 
     blocks = []
-    for day in ("monday", "tuesday", "wednesday", "thursday"):
+    for day in ("monday", "tuesday", "wednesday", "thursday", "friday"):
         if day in days:
             blocks.append(build_day_block(day, days[day]))
     generated = "\n\n".join(blocks)

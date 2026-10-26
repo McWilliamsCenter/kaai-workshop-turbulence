@@ -23,10 +23,10 @@ script in `js/main.js`.
 | Section | Look for | Notes |
 |---|---|---|
 | Overview / Topics | `#overview` section | Wording marked for review with the organizers |
-| Schedule | `#schedule` section | Placeholder day blocks. When a schedule CSV exists, run `python3 scripts/build_schedule.py <file.csv>` to regenerate the content between the `SCHEDULE:START/END` markers |
-| Speakers | `#speakers` section | Replace the "to be announced" note with `.speaker-grid` / `.speaker-card` markup (styles are in `css/style.css`) |
+| Schedule | `schedule.csv` | Edit the CSV, then run `python3 scripts/build_schedule.py schedule.csv` to regenerate the `#schedule` content between the `SCHEDULE:START/END` markers. Talk titles are TBA |
+| Speakers | `#speakers` section, `.speaker-card` | Photos are 480×480 JPGs in `img/speakers/`. Cards without a photo use a `.speaker-initials` placeholder; swap it for an `<img>` when a photo arrives |
 | Registration | `#registration` section | Add registration link/form |
-| Committee | `#committee` section | Missing affiliation and homepage links are marked with TODO comments |
+| Committee | `#committee` section | Homepage links are marked with a TODO comment |
 
 The logo is cropped from a turbulence render (`ai_turbulence_logo.png`, 3840×2160, kept out
 of the repo) into a round, red-ringed badge. To regenerate it from a new source image, run
