@@ -71,12 +71,11 @@ Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` ·
 - **Hero:** title **AI Methods for Turbulence and Early-Universe Signals**, "A KAAI Workshop ·
   Carnegie Mellon University", **November 2–6**, countdown, Simons + McWilliams logos.
 - **Overview + Topics:** two themes, AI methods for turbulence and early-universe signals.
-- **Registration — TBD.** Contact: mgurgeni@andrew.cmu.edu.
+- **Registration:** open via a Google Form (button in `#registration`). Contact: mgurgeni@andrew.cmu.edu.
 - **Location:** unchanged from the previous installment (Wean Hall 8330, CMU).
 - **Schedule — tentative.** Mon–Fri program generated from `schedule.csv` with
   `scripts/build_schedule.py`. Talk titles are TBA; don't invent them. Friday is a hackathon day.
-- **Speakers:** Arthur Kosowsky, Isak Stomberg, Deyan Mihaylov, Matthew Ho, Muni Zhou (Stephon Alexander
-  is on the schedule but not on the speaker list yet). Don't invent positions or affiliations.
+- **Speakers:** Arthur Kosowsky, Isak Stomberg, Deyan Mihaylov, Matthew Ho, Muni Zhou, Stephon Alexander. Don't invent positions or affiliations.
 - **Organizing Committee:** Tina Kahniashvili (CMU Physics), Barnabás Póczos (CMU MLD),
   Alberto Roper Pol (University of Geneva, Dept. of Theoretical Physics), Murman Gurgenidze (CMU Physics). Don't fabricate
   links that weren't supplied.
@@ -98,7 +97,6 @@ Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` ·
 
 - Speaker names + affiliations + photos
 - Full schedule
-- Registration link/form
 - Venue/room details at CMU
 - Individual committee member homepage links
 
