@@ -5,6 +5,10 @@ Early-Universe Signals (Carnegie Mellon University, November 2–6, 2026).
 
 Plain HTML/CSS/JS. No build step, no dependencies.
 
+Live at https://mcwilliamscenter.github.io/kaai-workshop-turbulence/, served by GitHub Pages
+from the root of `main` in `McWilliamsCenter/kaai-workshop-turbulence`. Pushing to `main`
+updates the site within a minute or two.
+
 ## Local preview
 
 Open `index.html` directly in a browser, or serve the directory:
