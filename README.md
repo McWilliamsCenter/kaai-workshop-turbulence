@@ -29,7 +29,7 @@ script in `js/main.js`.
 | Overview / Topics | `#overview` section | Wording marked for review with the organizers |
 | Schedule | `schedule.csv` | Edit the CSV, then run `python3 scripts/build_schedule.py schedule.csv` to regenerate the `#schedule` content between the `SCHEDULE:START/END` markers. Talk titles are TBA |
 | Speakers | `#speakers` section, `.speaker-card` | Photos are 480×480 JPGs in `img/speakers/`. Cards without a photo use a `.speaker-initials` placeholder; swap it for an `<img>` when a photo arrives |
-| Registration | `#registration` section | "Register" button links to the Google Form |
+| Registration | `#registration` section | Registration closed; "Join on Zoom" button links to the Zoom meeting |
 | Committee | `#committee` section | Homepage links are marked with a TODO comment |
 
 The logo is cropped from a turbulence render (`ai_turbulence_logo.png`, 3840×2160, kept out

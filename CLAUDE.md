@@ -71,7 +71,7 @@ Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` ·
 - **Hero:** title **AI Methods for Turbulence and Early-Universe Signals**, "A KAAI Workshop ·
   Carnegie Mellon University", **November 2–6**, countdown, Simons + McWilliams logos.
 - **Overview + Topics:** two themes, AI methods for turbulence and early-universe signals.
-- **Registration:** open via a Google Form (button in `#registration`). Contact: mgurgeni@andrew.cmu.edu.
+- **Registration:** closed. `#registration` has a "Join on Zoom" button (workshop meeting 927 0071 7097). Contact: mgurgeni@andrew.cmu.edu.
 - **Location:** unchanged from the previous installment (Wean Hall 8330, CMU).
 - **Schedule — tentative.** Mon–Fri program generated from `schedule.csv` with
   `scripts/build_schedule.py`. Use only talk titles the organizers supply; talks without one show the speaker's name. Friday is a hackathon day.
