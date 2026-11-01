@@ -74,8 +74,8 @@ Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` ·
 - **Registration:** open via a Google Form (button in `#registration`). Contact: mgurgeni@andrew.cmu.edu.
 - **Location:** unchanged from the previous installment (Wean Hall 8330, CMU).
 - **Schedule — tentative.** Mon–Fri program generated from `schedule.csv` with
-  `scripts/build_schedule.py`. Talk titles are TBA; don't invent them. Friday is a hackathon day.
-- **Speakers:** Arthur Kosowsky, Isak Stomberg, Deyan Mihaylov, Matthew Ho, Muni Zhou, Stephon Alexander. Don't invent positions or affiliations.
+  `scripts/build_schedule.py`. Use only talk titles the organizers supply; talks without one show the speaker's name. Friday is a hackathon day.
+- **Speakers:** Arthur Kosowsky, Isak Stomberg, Deyan Mihaylov, Matthew Ho, Muni Zhou, Wenrong Sun. Don't invent positions or affiliations.
 - **Organizing Committee:** Tina Kahniashvili (CMU Physics), Barnabás Póczos (CMU MLD),
   Alberto Roper Pol (University of Geneva, Dept. of Theoretical Physics), Murman Gurgenidze (CMU Physics). Don't fabricate
   links that weren't supplied.

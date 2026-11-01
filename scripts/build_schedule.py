@@ -44,6 +44,9 @@ Row handling by Type (case-insensitive):
 
 Title / Speaker text:
     - Empty or literal "TBA" (any case) -> displayed as "TBA".
+    - A talk with no title but a known speaker shows the speaker's name as the
+      title line and leaves the speaker column empty. With neither title nor
+      speaker, the talk reads "To be announced".
 
 Abstracts:
     - When the Abstract column is non-empty, the title is rendered as a native
@@ -178,12 +181,21 @@ def build_day_block(day, rows):
 
         display_type = "Contributed talk" if rtype_norm in CONTRIBUTED_ALIASES else esc(clean(rtype))
         css_class = TYPE_CLASS.get(rtype_norm, TYPE_CLASS.get("contributed talk") if rtype_norm in CONTRIBUTED_ALIASES else "contributed")
-        speaker_html = or_tba(speaker)
+        if or_tba(title) == "TBA" and or_tba(speaker) == "TBA":
+            session_html = '<span class="session-title">To be announced</span>'
+            speaker_cell = '<td class="speaker"></td>'
+        elif or_tba(title) == "TBA":
+            # No title yet: show the speaker's name as the title, empty speaker column.
+            session_html = title_html(speaker, abstract)
+            speaker_cell = '<td class="speaker"></td>'
+        else:
+            session_html = title_html(title, abstract)
+            speaker_cell = f'<td class="speaker known">{or_tba(speaker)}</td>'
         lines.append(
             f'              <tr><td class="time">{time_html}</td>'
             f'<td class="session {css_class}"><span class="session-type">{display_type}</span>'
-            f'{title_html(title, abstract)}</td>'
-            f'<td class="speaker known">{speaker_html}</td></tr>'
+            f'{session_html}</td>'
+            f'{speaker_cell}</tr>'
         )
 
     lines.append("            </tbody>")
