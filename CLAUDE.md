@@ -66,7 +66,7 @@ informal, focused on substance.
 
 ## Site structure (single page, anchor nav)
 
-Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` · `Speakers` · `Committee`
+Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` · `Slides` · `Speakers` · `Committee`
 
 - **Hero:** title **AI Methods for Turbulence and Early-Universe Signals**, "A KAAI Workshop ·
   Carnegie Mellon University", **November 2–6**, countdown, Simons + McWilliams logos.
@@ -75,6 +75,7 @@ Nav bar: `Overview` · `Registration` · `Location` · `Topics` · `Schedule` ·
 - **Location:** unchanged from the previous installment (Wean Hall 8330, CMU).
 - **Schedule — tentative.** Mon–Fri program generated from `schedule.csv` with
   `scripts/build_schedule.py`. Use only talk titles the organizers supply; talks without one show the speaker's name. Friday is a hackathon day.
+- **Slides:** `#slides` lists talk PDFs stored in `slides/` (lowercase, hyphenated filenames). Add one `.slide-item` per talk.
 - **Speakers:** Arthur Kosowsky, Isak Stomberg, Deyan Mihaylov, Matthew Ho, Muni Zhou, Wenrong Sun. Don't invent positions or affiliations.
 - **Organizing Committee:** Tina Kahniashvili (CMU Physics), Barnabás Póczos (CMU MLD),
   Alberto Roper Pol (University of Geneva, Dept. of Theoretical Physics), Murman Gurgenidze (CMU Physics). Don't fabricate

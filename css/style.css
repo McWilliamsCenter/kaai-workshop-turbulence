@@ -609,6 +609,45 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   margin-right: 6px;
 }
 
+/* Slides */
+.slide-list {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+.slide-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+.slide-title {
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2em;
+}
+.slide-meta {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin-bottom: 0;
+}
+.slide-link {
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border: 1px solid var(--red);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.slide-link:hover {
+  background: var(--red);
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Committee */
 .committee-grid {
   grid-template-columns: repeat(2, 1fr);
