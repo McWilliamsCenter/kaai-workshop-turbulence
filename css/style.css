@@ -673,6 +673,11 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   font-size: 0.85rem;
   font-weight: 600;
 }
+.slide-links {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
 .slide-subhead {
   margin-top: 48px;
 }
